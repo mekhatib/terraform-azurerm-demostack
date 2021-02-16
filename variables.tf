@@ -205,7 +205,6 @@ variable "nomad_gossip_key" {
 }
 
 variable "token" {
-  default = ""
 }
 
 variable "run_nomad_jobs" {
