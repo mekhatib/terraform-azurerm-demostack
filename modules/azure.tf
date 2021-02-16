@@ -43,7 +43,7 @@ resource "azurerm_availability_set" "vm" {
 resource "azurerm_virtual_network" "awg" {
   name                = "${var.virtual_network_name}-awg"
   location            = azurerm_resource_group.demostack.location
-  address_space       = ["${var.address_space}"]
+  address_space       = ${var.address_space}
   resource_group_name = azurerm_resource_group.demostack.name
 
   tags = {
